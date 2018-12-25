@@ -1,0 +1,7 @@
+{
+  "name": "luggage",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

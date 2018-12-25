@@ -1,0 +1,23 @@
+.sign_page {
+  .sign {
+    display: flex;
+    padding: 1.5rem 0;
+
+    input {
+      flex: 1;
+      height: 4rem;
+      line-height: 4rem;
+    }
+
+    .timer {
+      width: 10rem;
+      height: 4rem;
+      line-height: 4rem;
+      margin-left:1rem;
+      background-color:#eee;
+      text-align:center;
+      color:#666;
+    }
+  }
+
+}

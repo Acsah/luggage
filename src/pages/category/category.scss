@@ -1,0 +1,30 @@
+page-category {
+  .cate-content {
+    display: flex;
+    height: 100%;
+
+    .cate-left {
+      width: 100px;
+      overflow-y: auto; // 左右都各自实现纵向滑动
+
+      ul {
+        list-style: none;
+        padding: 10px;
+        border-right: 1.2rem solid #eee;
+        li {
+          margin: 1rem 0;
+          height: 4rem;
+          line-height: 4rem;
+          border-bottom: .1rem solid #ccc;
+          text-align: center;
+        }
+      }
+    }
+
+    .cate-right {
+      width: auto;
+      flex: 1;
+      overflow-y: auto; // 左右都各自实现纵向滑动
+    }
+  }
+}

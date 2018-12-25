@@ -1,0 +1,34 @@
+<!--
+  Generated template for the CategoryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>category</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class='cate-content'>
+    <div class='cate-left'>
+      <ul>
+        <li *ngFor="let item of leftList" (click)="getRightGoods(item._id)">
+          {{item.title}}
+        </li>
+      </ul>
+    </div>
+    <div class='cate-right'>
+      <ion-row>
+        <ion-col col-4 *ngFor="let item of rightList">
+          <img [src]='config.apiUrl+item.pic'>
+          <p>{{item.title}}</p>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>

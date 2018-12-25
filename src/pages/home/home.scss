@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+page-home {
+  .swiper-container {
+    height: auto;
+  }
+
+  .banner {
+    height: 49%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  ion-slides {
+    display: inline-block !important;
+  }
+
+  .btn-imgs {
+    display: flex;
+    justify-content: center; //定义项目在主轴(水平方向)上居中对齐
+    align-items: center; //定义项目在交叉轴(垂直方向)上居中对齐
+
+    img {
+      height: 16%;
+      width: 40%;
+      margin: 0 auto;
+    }
+  }
+
+  .sub-title::before {
+    content: '';
+    border-left: 4px solid red;
+    padding: 0 3px;
+  }
+
+  .sub-title {
+    padding: 1rem;
+  }
+
+  .slide-warp {
+    padding:0 1rem;
+    ion-scroll {
+      width: 100%;
+      height: 100px;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        width: 64px;
+        height: 80px;
+        float: left;
+        margin-right: 10px;
+
+        p {
+          padding: 4px;
+          margin: 0px;
+        }
+      }
+    }
+  }
+
+
+}
+
+
+//清楚浮动
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0px;
+  clear: both;
+}

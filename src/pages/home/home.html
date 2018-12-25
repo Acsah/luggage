@@ -1,0 +1,40 @@
+<ion-header>
+</ion-header>
+
+
+<ion-content>
+  <ion-slides pager class='banner' loop='true' autoplay='3000'>
+    <ion-slide>
+      <img src='assets/imgs/banner01@2x.png'>
+    </ion-slide>
+    <ion-slide>
+      <img src='assets/imgs/banner02@2x.png'>
+    </ion-slide>
+    <ion-slide>
+      <img src='assets/imgs/banner03@2x.png'>
+    </ion-slide>
+  </ion-slides>
+
+  <div class="btn-imgs">
+    <img src="assets/imgs/shopping@2x.png" [navPush]='BuyListPage'>
+    <img src="assets/imgs/traveler@2x.png" [navPush]='GoodsListPage'>
+  </div>
+
+  <div class='sub-title'>
+    海外的箱子们
+  </div>
+  <div class="slide-warp">
+    <ion-scroll scrollX="true">
+      <ul *ngIf="bestList.length>0" [ngStyle]="{'width':bestListWidth}" class='clearfix'>
+<li *ngFor="let item of bestList" [navPush]='GoodsDetailPage' [navParams]="{'id':item._id}">
+          <img [src]='config.apiUrl+item.s_pic'>
+          <p>{{item.title}}</p>
+        </li>
+      </ul>
+    </ion-scroll>
+  </div>
+
+
+
+
+</ion-content>
